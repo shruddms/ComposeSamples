@@ -82,7 +82,7 @@ fun AlignYourBodyElement(
             painter = painterResource(drawable),
             contentDescription = null,
             contentScale = ContentScale.Crop,
-            modifier = Modifier
+            modifier = Modifier.padding(5.dp,0.dp,5.dp,0.dp)
                 .size(88.dp)
                 .clip(CircleShape)
         )
@@ -168,7 +168,7 @@ fun HomeSection(
             text = stringResource(title).uppercase(),
             style = MaterialTheme.typography.h6,
             modifier = Modifier
-                .paddingFromBaseline(top = 40.dp, bottom = 8.dp)
+                .paddingFromBaseline(top = 40.dp, bottom = 12.dp)
                 .padding(horizontal = 16.dp)
         )
         content()
